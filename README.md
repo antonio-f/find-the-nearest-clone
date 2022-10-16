@@ -1,2 +1,2 @@
 # find-the-nearest-clone
-HackerRank solution to "Find the nearest clone" problem in Python
+Solution to HackerRank's "Find the nearest clone" problem in Python
