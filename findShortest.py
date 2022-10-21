@@ -19,7 +19,7 @@ import sys
 
 from collections import defaultdict, deque
 
-def findShortest(graph_nodes, graph_from, graph_to, ids, val):
+def findShortest(graph_from, graph_to, ids, val):
     adj = defaultdict(list)
     for u, v in zip(graph_from, graph_to):
         adj[u].append(v)
@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     val = int(input())
 
-    ans = findShortest(graph_nodes, graph_from, graph_to, ids, val)
+    ans = findShortest(graph_from, graph_to, ids, val)
 
     print("answer", ans)
     # fptr.write(str(ans) + '\n')
