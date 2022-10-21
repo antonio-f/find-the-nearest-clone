@@ -18,7 +18,7 @@ import sys
 #
 from collections import defaultdict, deque
 
-def findShortest(graph_nodes, graph_from, graph_to, ids, val):
+def findShortest(graph_from, graph_to, ids, val):
     
     # build adjacency dictionary {from: [to,...,to]}
     adj = defaultdict(list)
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     val = int(input())
 
-    ans = findShortest(graph_nodes, graph_from, graph_to, ids, val)
+    ans = findShortest(graph_from, graph_to, ids, val)
 
     print("answer", ans)
     # fptr.write(str(ans) + '\n')
